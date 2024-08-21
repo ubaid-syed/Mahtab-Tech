@@ -1,0 +1,31 @@
+/* ScrollToTop.css */
+@keyframes showreel {
+  0% {
+    transform: scale(1);
+    stroke-width: 2;
+  }
+  50% {
+    transform: scale(1.1);
+    stroke-width: 4;
+  }
+  100% {
+    transform: scale(1);
+    stroke-width: 2;
+  }
+}
+
+.animate-showreel {
+  animation: showreel 1s infinite;
+}
+
+
+/* Simplified ScrollToTop.css for testing */
+.fixed {
+  position: fixed;
+}
+.bottom-4 {
+  bottom: 1rem;
+}
+.right-4 {
+  right: 1rem;
+}

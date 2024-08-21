@@ -1,0 +1,160 @@
+/* Testimonials.css */
+.testimonial-item {
+       display: flex;
+       align-items: flex-start;
+       cursor: pointer;
+       transition: transform 0.3s;
+       background-color: #f0f0f0;
+       border-radius: 8px;
+       padding: 16px;
+       margin-bottom: 16px;
+       border: 1px solid #ddd;
+     }
+     
+     .testimonial-item:hover {
+       transform: scale(1.05);
+     }
+     
+     .testimonial-item img {
+       width: 64px;
+       height: 64px;
+       border-radius: 50%;
+       object-fit: cover;
+     }
+     
+     .testimonial-item blockquote {
+       margin: 0;
+       font-size: 14px;
+       color: #333;
+     }
+     
+     .testimonial-item p {
+       margin: 4px 0;
+     }
+     
+     .testimonial-item .text-gray-900 {
+       font-weight: bold;
+       font-size: 14px;
+     }
+     
+     .testimonial-item .text-xs {
+       font-size: 12px;
+       color: #666;
+     }
+     
+     .testimonial-item.selected {
+       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+       transform: scale(1.05);
+     }
+     
+
+     .arrow-button {
+      position: fixed;
+      bottom: 10%;
+      right: 5%;
+      width: 50px;
+      height: 50px;
+      background: #000;
+      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+      transition: background 0.5s ease;
+      z-index: 1000;
+    }
+    
+    .arrow-button:hover {
+      background: #fff;
+      color: #000;
+    }
+    
+    /* .animated-button {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 56px;
+      background: transparent;
+      border: 2px solid white;
+      border-radius: 50%;
+      color: white;
+      overflow: hidden;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+    
+    .animated-button::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 300%;
+      height: 300%;
+      background: white;
+      transform: translate(-50%, -50%) scale(0);
+      border-radius: 50%;
+      transition: transform 0.4s ease, background 0.3s ease;
+      z-index: 0;
+    }
+    
+    .animated-button:hover {
+      color: black;
+    }
+    
+    .animated-button:hover::before {
+      transform: translate(-50%, -50%) scale(1);
+    }
+    
+    .animated-button > * {
+      position: relative;
+      z-index: 1;
+    }
+    .animated-button::before {
+      transform-origin: var(--mouse-x) var(--mouse-y);
+    } */
+
+
+    .animated-button {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 56px;
+      background: transparent;
+      border: 2px solid white;
+      border-radius: 50%;
+      color: white;
+      overflow: hidden;
+      cursor: pointer;
+      transition: color 0.3s ease;
+      z-index: 1;
+      /* Use a custom property to set the position of the fill */
+      --fill-x: 50%;
+      --fill-y: 50%;
+    }
+    
+    .animated-button::before {
+      content: "";
+      position: absolute;
+      top: var(--fill-y);
+      left: var(--fill-x);
+      width: 300%;
+      height: 300%;
+      background: white;
+      transform: translate(-50%, -50%) scale(0);
+      border-radius: 50%;
+      transition: transform 0.4s ease;
+      z-index: 0;
+    }
+    
+    .animated-button:hover {
+      color: black;
+    }
+    
+    .animated-button:hover::before {
+      transform: translate(-50%, -50%) scale(1);
+    }
+    
+    .animated-button > * {
+      position: relative;
+      z-index: 1;
+    }

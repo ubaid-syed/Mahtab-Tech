@@ -1,0 +1,110 @@
+.bg-pic{
+    background-image: url(../../assets/gray-texture.jpg);
+    background-repeat: no-repeat;
+}
+.hello ul {
+    height: 450px;
+    width: 450px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    overflow: hidden;
+    margin-left: -40px;
+    clip-path: inset(0 0 0 50%); /* Show only the right half */
+}
+
+.hello ul::before {
+    height: 90%;
+    width: 90%;
+    border-radius: 50%;
+    border: solid 4px black;
+    display: block;
+    position: absolute;
+    margin-left: 26px;
+    margin-top: 10px;
+    content: "";
+}
+
+.hello li {
+    margin: 0;
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    line-height: 30px;
+    margin-top: -15px;
+    margin-left: 190px;
+    text-align: center; /* Center the text within the circle */
+    font-size: 20px; /* Adjust the size of the numbers */
+    width: 40px; /* Set width for centering */
+    height: 40px; /* Set height for centering */
+    border-radius: 50%; /* Make the numbers circular */
+    background-color: #000; /* Background color for numbers */
+    color: white; /* Number color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hello li.one {
+    transform: translate(80px) rotate(-132deg) translate(233px) rotate(120deg);
+}
+
+.hello li.two {
+    transform: translate(195px, -18px) rotate(-160deg) translate(230px) rotate(150deg);
+}
+
+
+.hello li.three {
+    transform: translate(200px) rotate(-180deg) translate(208px) rotate(180deg);
+}
+
+.hello li.four {
+    transform: translate(130px,-10px) rotate(-210deg) translate(193px) rotate(200deg);
+}
+
+.hello li.five {
+    transform: translate(85px) rotate(-220deg) translate(235px) rotate(220deg);
+}
+
+/* Default colors */
+.hello li.one {
+    background-color: #172554; /* Initial color for li.one */
+}
+
+.hello li.two {
+    background-color: #3B82F6; /* Initial color for li.two */
+}
+
+.hello li.three {
+    background-color:#EA580C; /* Initial color for li.three */
+}
+
+.hello li.four {
+    background-color: #22C55E; /* Initial color for li.four */
+}
+
+.hello li.five {
+    background-color: #15803D; /* Initial color for li.five */
+}
+
+
+.card {
+    will-change: transform, opacity;
+    /* position: absolute; */
+  }
+  
+  
+  /* Hover effect to scale up the card */
+ 
+  
+  /* Ensure `.animate` class has opacity and position settings */
+  .animate {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  

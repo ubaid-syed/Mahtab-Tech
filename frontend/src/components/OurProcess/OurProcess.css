@@ -1,0 +1,36 @@
+/* In your CSS file or inside a <style> tag */
+@keyframes fadeIn {
+       from {
+         opacity: 0;
+       }
+       to {
+         opacity: 1;
+       }
+     }
+     
+     @keyframes fadeOut {
+       from {
+         opacity: 1;
+       }
+       to {
+         opacity: 0;
+       }
+     }
+     
+     .fade-in {
+       animation: fadeIn 0.5s ease-in-out;
+     }
+     
+     .fade-out {
+       animation: fadeOut 0.5s ease-in-out;
+     }
+     
+
+     .upper-section {
+      /* background-image: url('https://images.pexels.com/photos/7598668/pexels-photo-7598668.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+      background-size: cover;
+      background-position: center;
+     
+      border-radius: 1.5rem; */
+    }
+    

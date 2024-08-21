@@ -1,0 +1,33 @@
+.testimonial-container {
+       display: flex;
+       justify-content: space-between;
+       align-items: flex-start;
+     }
+     
+     .testimonial-list {
+       width: 50%;
+     }
+     
+     .testimonial {
+       cursor: pointer;
+       margin: 10px 0;
+       padding: 10px;
+       background-color: #f0f0f0;
+       border: 1px solid #ddd;
+       transition: transform 0.3s ease;
+     }
+     
+     .testimonial.active {
+       transform: scale(1.1);
+       background-color: #e0e0e0;
+     }
+     
+     .testimonial-video {
+       width: 45%;
+     }
+     
+     .testimonial-video video {
+       width: 100%;
+       height: auto;
+     }
+     
